@@ -1,0 +1,14 @@
+.container {
+  position: relative;
+}
+
+.content {
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow-y: hidden;
+    top: 300px;
+    content: url(/images/Vector.svg);
+  }
+}
