@@ -3,11 +3,9 @@
   position: fixed;
   top: 0;
   opacity: 0;
-
   height: 100vh;
   width: 100%;
   z-index: -1;
-
   transition: opacity 0.3s ease, z-index 0.3s ease;
 
   &:global(.active) {
@@ -65,7 +63,6 @@
     background-color: var(--white);
     height: 2px;
     border-radius: 100vw;
-    // margin-top: 1.3rem;
   }
 }
 
@@ -82,4 +79,10 @@
   gap: 14px;
   font-size: 15px;
   color: var(--white);
+}
+
+.navigation {
+  &:global(.active) {
+    font-weight: bold;
+  }
 }

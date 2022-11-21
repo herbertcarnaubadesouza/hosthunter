@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import { NavigationDrawer } from "./NavigationDrawer";
 
@@ -18,7 +19,9 @@ export function MobileHeader() {
         <a onClick={handleOpenMenu}>
           <img src="/images/hamburguer.svg" alt="" />
         </a>
-        <img src="/images/logoHostHunter.png" alt="" />
+        <Link href="/">
+          <img src="/images/logoHostHunter.png" alt="" />
+        </Link>
         <img src="/images/personMobile.svg" alt="" />
       </header>
       <NavigationDrawer isOpen={isMenuOpen} handleClose={handleCloseMenu} />

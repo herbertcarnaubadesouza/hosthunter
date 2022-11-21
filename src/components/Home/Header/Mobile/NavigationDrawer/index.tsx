@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 import styles from "./styles.module.scss";
 
@@ -11,6 +12,8 @@ export function NavigationDrawer({
   isOpen,
   handleClose,
 }: NavigationDrawerProps) {
+  const router = useRouter();
+
   return (
     <>
       <div
@@ -19,26 +22,76 @@ export function NavigationDrawer({
       ></div>
       <div className={`${styles.drawerMenu} ${isOpen ? "active" : ""}`}>
         <div className={styles.content}>
-          <img src="/images/logoHostHunter.png" alt="" />
+          <Link href="/">
+            <img src="/images/logoHostHunter.png" alt="" />
+          </Link>
           <div className={styles.divisor}></div>
           <div className={styles.navigationSection}>
-            <Link href={"/"}>
-              <a style={{ fontWeight: "bold" }}>Cloud Storage Drive</a>
+            <Link href="/cloud-storage-drive">
+              <a
+                className={
+                  router.pathname === "/cloud-storage-drive"
+                    ? `${styles.navigation} active`
+                    : styles.navigation
+                }
+              >
+                Cloud Storage Drive
+              </a>
             </Link>
-            <Link href={"/"}>
-              <a>Servidores e Coloations</a>
+            <Link href="/server">
+              <a
+                className={
+                  router.pathname === "/server"
+                    ? `${styles.navigation} active`
+                    : styles.navigation
+                }
+              >
+                Servidores e Coloations
+              </a>
             </Link>
-            <Link href={"/"}>
-              <a>VPS Cloud</a>
+            <Link href="/vps-cloud">
+              <a
+                className={
+                  router.pathname === "/vps-cloud"
+                    ? `${styles.navigation} active`
+                    : styles.navigation
+                }
+              >
+                VPS Cloud
+              </a>
             </Link>
-            <Link href={"/"}>
-              <a>Soluções Corporativas</a>
+            <Link href="/solucoes-corporativas">
+              <a
+                className={
+                  router.pathname === "/solucoes-corporativas"
+                    ? `${styles.navigation} active`
+                    : styles.navigation
+                }
+              >
+                Soluções Corporativas
+              </a>
             </Link>
-            <Link href={"/"}>
-              <a>Registrar Domínio</a>
+            <Link href="/game-solutions">
+              <a
+                className={
+                  router.pathname === "/game-solutions"
+                    ? `${styles.navigation} active`
+                    : styles.navigation
+                }
+              >
+                Registrar Domínio
+              </a>
             </Link>
-            <Link href={"/"}>
-              <a>HostHunter</a>
+            <Link href="/company">
+              <a
+                className={
+                  router.pathname === "/company"
+                    ? `${styles.navigation} active`
+                    : styles.navigation
+                }
+              >
+                HostHunter
+              </a>
             </Link>
           </div>
           <div className={styles.divisor}></div>
