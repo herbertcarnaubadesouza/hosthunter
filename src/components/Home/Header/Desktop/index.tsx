@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { PersonIcon } from "../../../../Icons/PersonIcon";
 import styles from "./styles.module.scss";
 
 export function DesktopHeader() {
@@ -31,7 +30,7 @@ export function DesktopHeader() {
               </Link>
             </nav>
             <div className={styles.icon}>
-              <PersonIcon />
+              <img src="/images/personMobile.svg" alt="" />
             </div>
           </div>
         </div>
