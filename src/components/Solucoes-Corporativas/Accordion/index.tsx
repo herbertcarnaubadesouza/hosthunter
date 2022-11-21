@@ -55,7 +55,7 @@ const data = [
     subtitle: "Segurança DDOS premium da HostHunter",
     img: "/images/accordion1.png",
     answer:
-      "    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
   },
   {
     id: 2,
@@ -63,7 +63,7 @@ const data = [
     subtitle: "Segurança DDOS premium da HostHunter",
     img: "/images/accordion2.png",
     answer:
-      "    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
   },
   {
     id: 3,
@@ -71,7 +71,7 @@ const data = [
     subtitle: "Segurança DDOS premium da HostHunter",
     img: "/images/accordion3.png",
     answer:
-      "    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
   },
   {
     id: 4,
@@ -79,6 +79,6 @@ const data = [
     subtitle: "Segurança DDOS premium da HostHunter",
     img: "/images/accordion4.png",
     answer:
-      "    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
   },
 ];

@@ -14,9 +14,9 @@ export function TedHunter() {
           <div className={styles.textBlock}>
             <p>
               This simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since
+              Lorem Ipsum has been the industrys standard dummy text ever since
               is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since
+              Lorem Ipsum has been the industrys standard dummy text ever since
               the 1500s the 1500s.
             </p>
           </div>

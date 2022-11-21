@@ -11,7 +11,7 @@ export function CorporativasBanner() {
               <h1>Soluções corporativas</h1>
               <h2>
                 is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever
+                Lorem Ipsum has been the industrys standard dummy text ever
                 since the 1500s
               </h2>
             </div>
