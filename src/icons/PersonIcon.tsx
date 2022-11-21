@@ -1,4 +1,4 @@
-function PersonIcon() {
+export function PersonIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -31,5 +31,3 @@ function PersonIcon() {
     </svg>
   );
 }
-
-export default PersonIcon;

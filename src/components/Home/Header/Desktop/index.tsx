@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import PersonIcon from "../../../../Icons/PersonIcon";
+import { PersonIcon } from "../../../../Icons/PersonIcon";
 import styles from "./styles.module.scss";
 
 export function DesktopHeader() {
