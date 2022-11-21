@@ -1,0 +1,16 @@
+.headerContainer {
+  display: none;
+  justify-content: space-between;
+  padding-inline: 2rem;
+  align-items: center;
+  margin-top: 1.5rem;
+
+  img {
+    max-width: 130px;
+    object-fit: cover;
+  }
+
+  @media only screen and (max-width: 768px) {
+    display: flex;
+  }
+}

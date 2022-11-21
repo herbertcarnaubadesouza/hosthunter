@@ -1,0 +1,29 @@
+.container {
+  position: relative;
+}
+
+.content {
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow-y: hidden;
+    top: 300px;
+    content: url(/images/Vector.svg);
+  }
+
+  @media only screen and (max-width: 768px) {
+    img {
+      max-width: 345px;
+    }
+
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      overflow-y: hidden;
+      top: 160px;
+      content: url(/images/Vector-mobile.svg);
+    }
+  }
+}

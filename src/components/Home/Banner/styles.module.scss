@@ -1,0 +1,109 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin-block: 6rem;
+  margin-right: max(0px, (100% - 1440px)/2);
+  padding-right: 2.5rem;
+  justify-content: space-between;
+  gap: 1rem;
+
+  @media only screen and (max-width: 768px) {
+    padding-right: 2rem;
+    margin-block: 53px;
+  }
+}
+
+.content {
+  margin-left: -6rem;
+  img {
+    max-width: 660px;
+    object-fit: cover;
+
+    @media only screen and (max-width: 768px) {
+      max-width: 263px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    content: url(/images/vectorBanner.png);
+
+    @media only screen and (max-width: 768px) {
+      content: url(/images/vectorBanner-mobile.png);
+    }
+  }
+}
+
+.titleContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-end;
+  width: 100%;
+  h1 {
+    font-weight: 600;
+    color: var(--white);
+    font-size: 62px;
+    line-height: 82px;
+    text-align: right;
+
+    @media only screen and (max-width: 768px) {
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 29px;
+      text-align: right;
+    }
+  }
+
+  h2 {
+    text-align: right;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 35px;
+    letter-spacing: 0.11em;
+    color: var(--white);
+
+    @media only screen and (max-width: 768px) {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: right;
+      letter-spacing: 0.11em;
+    }
+  }
+
+  button {
+    max-width: 640px;
+    padding-inline: 3rem;
+    padding-block: 2.3125rem;
+    font-size: 30px;
+    width: 100%;
+    background: linear-gradient(89.87deg, #f4c648 0.09%, #ffb347 99.89%);
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.09em;
+
+    @media only screen and (max-width: 768px) {
+      padding-inline: 0px;
+      padding-block: 9px;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      letter-spacing: 0.09em;
+      color: #131f36;
+      border-radius: 5px;
+      max-width: 169px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    gap: 14px;
+  }
+}

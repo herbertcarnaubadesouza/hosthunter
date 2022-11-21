@@ -1,0 +1,63 @@
+.container {
+  position: relative;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: max(0px, (100% - 1440px)/2);
+  padding-right: 2.5rem;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    overflow-y: hidden;
+    top: 270px;
+    content: url(/images/Vector.svg);
+  }
+
+  h2 {
+    text-align: right;
+    width: 100%;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 82px;
+    text-align: right;
+    max-width: 642px;
+    color: #ffffff;
+  }
+
+  span {
+    color: #f4c648;
+  }
+
+  img {
+    max-width: 450px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding-right: 2rem;
+
+    img {
+      max-width: 202px;
+    }
+
+    h2 {
+      font-size: 20px;
+      line-height: 23px;
+    }
+
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: 0px;
+      overflow-y: hidden;
+      top: 100px;
+      content: url(/images/Vector-mobile.svg);
+    }
+  }
+}

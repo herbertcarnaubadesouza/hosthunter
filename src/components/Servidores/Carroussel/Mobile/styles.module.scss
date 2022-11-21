@@ -1,0 +1,166 @@
+.mobileCarrousselContainer {
+  display: none;
+  padding-inline: 2rem;
+  padding-top: 53px;
+
+  @media only screen and (max-width: 768px) {
+    display: block;
+  }
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  margin-bottom: 53px;
+
+  h2 {
+    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 12px;
+    color: #f4c648;
+  }
+}
+
+.swiper {
+  height: 100%;
+}
+
+.swiperSlide {
+  text-align: center;
+  font-size: 18px;
+  background: #293964;
+  border-radius: 5px;
+  color: var(--white);
+  max-height: 561px;
+  padding-block: 4.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 350px;
+
+  @media only screen and (max-width: 768px) {
+    max-width: 128px;
+    max-height: 227px;
+    padding-block: 1.5rem;
+  }
+}
+
+.swiperWrapper {
+  align-items: center;
+}
+
+.swiperContent {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 3.5rem;
+  gap: 9rem;
+  h3 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: white;
+
+    &:not(:nth-child(2)) {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+      color: var(--yellow-400);
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding-inline: 1rem;
+    gap: 0px;
+
+    h2 {
+      line-height: 0px;
+      font-size: 13px;
+    }
+
+    h3 {
+      font-size: 15px;
+    }
+
+    p {
+      font-size: 11px;
+      line-height: 10px;
+
+      &:not(:nth-child(2)) {
+        margin-top: 25px;
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+.swiperTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  @media only screen and (max-width: 768px) {
+    gap: 10px;
+  }
+}
+
+.swiperFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+  span {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 59px;
+    color: #ffffff;
+  }
+
+  button {
+    max-width: 171px;
+    width: 100%;
+    padding-block: 1rem;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 500;
+    background: linear-gradient(180deg, #ffb347 0%, #f4c648 100%);
+    border-radius: 15px;
+    color: #131e33;
+  }
+
+  @media only screen and (max-width: 768px) {
+    gap: 0px;
+
+    span {
+      font-size: 12px;
+      line-height: 10px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 3px;
+      font-size: 12px;
+      max-width: 70px;
+      border-radius: 5px;
+    }
+  }
+}

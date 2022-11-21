@@ -1,0 +1,67 @@
+.container {
+  position: relative;
+  padding-bottom: 10rem;
+}
+
+.content {
+  margin-inline: auto;
+  padding-inline: 2.5rem;
+  max-width: 1440px;
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow-y: hidden;
+    top: 40px;
+    content: url(/images/Vector.svg);
+
+    @media only screen and (max-width: 768px) {
+      top: 60px;
+      content: url(/images/Vector-mobile.svg);
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    margin-bottom: -100px;
+    padding-inline: 2rem;
+  }
+}
+
+.title {
+  h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.7rem;
+    line-height: 54px;
+    color: var(--white);
+
+    @media only screen and (max-width: 768px) {
+      color: #fff;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiperSlide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+
+  @media only screen and (max-width: 768px) {
+    height: 130px;
+    img {
+      width: 26px;
+    }
+  }
+}

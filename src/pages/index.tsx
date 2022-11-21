@@ -1,24 +1,22 @@
 import type { NextPage } from "next";
-import { About } from "../components/About";
-import { Banner } from "../components/Banner";
-import { Footer } from "../components/Footer";
-import { Grid } from "../components/Grid";
-import { DesktopHeader } from "../components/Header";
-import { Services } from "../components/Services";
-import { Ted } from "../components/Ted";
+import { About } from "../components/Home/About";
+import { Banner } from "../components/Home/Banner";
+import { Footer } from "../components/Home/Footer";
+import { Grid } from "../components/Home/Grid";
+import { Header } from "../components/Home/Header";
+import { Services } from "../components/Home/Services";
+import { Ted } from "../components/Home/Ted";
 
-const Home: NextPage = () => {
-  return (
-    <>
-      <DesktopHeader />
-      <Banner />
-      <Services />
-      <Grid />
-      <About />
-      <Ted />
-      <Footer />
-    </>
-  );
-};
+const Home: NextPage = () => (
+  <>
+    <Header />
+    <Banner />
+    <Services />
+    <Grid />
+    <About />
+    <Ted />
+    <Footer />
+  </>
+);
 
 export default Home;

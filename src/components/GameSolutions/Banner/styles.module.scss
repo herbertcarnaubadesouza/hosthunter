@@ -1,0 +1,130 @@
+.container {
+  position: relative;
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    top: 100px;
+    z-index: -1;
+    content: url(/images/subtract.png);
+
+    @media only screen and (max-width: 768px) {
+      content: "";
+    }
+  }
+}
+
+.content {
+  margin-inline: auto;
+  position: relative;
+  padding-top: 6.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 180px;
+
+  @media only screen and (max-width: 768px) {
+    padding-top: 102px;
+    gap: 64px;
+  }
+}
+
+.titleContainer {
+  display: flex;
+  gap: 32px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+
+    h1 {
+      font-weight: 600;
+      font-size: 62px;
+      line-height: 82px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      gap: 21px;
+
+      h1 {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 29px;
+      }
+
+      img {
+        width: 25px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    gap: 13px;
+  }
+}
+
+.bannerContent {
+  display: flex;
+  justify-content: center;
+  p {
+    max-width: 769px;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 35px;
+    letter-spacing: 0.11em;
+  }
+
+  @media only screen and (max-width: 768px) {
+    p {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      max-width: 253px;
+    }
+  }
+}
+
+.tedContainer {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-left: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+
+  li {
+    padding-block: 3rem;
+    font-size: 27px;
+    margin-left: 2.5rem;
+  }
+
+  img {
+    max-width: 580px;
+    object-fit: cover;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding-left: 1rem;
+    align-items: flex-end;
+
+    li {
+      font-weight: 600;
+      font-size: 10px;
+      line-height: 12px;
+      padding-block: 2rem;
+    }
+
+    img {
+      max-width: 267px;
+      margin-right: -50px;
+      margin-bottom: -80px;
+    }
+  }
+}

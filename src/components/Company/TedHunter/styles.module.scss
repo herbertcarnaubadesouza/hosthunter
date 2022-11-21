@@ -1,0 +1,93 @@
+.container {
+  position: relative;
+  color: #fff;
+}
+
+.content {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 2.5rem;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    top: -250px;
+    content: url(/images/ted-banner-subtract.png);
+
+    @media only screen and (max-width: 768px) {
+      content: "";
+    }
+  }
+
+  img {
+    max-width: 600px;
+    margin-left: -40px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding-inline: 2rem;
+
+    img {
+      max-width: 240px;
+    }
+  }
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  text-align: right;
+
+  @media only screen and (max-width: 768px) {
+    gap: 14px;
+  }
+}
+
+.titleBlock {
+  text-align: right;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 54px;
+  color: var(--white);
+
+  span {
+    color: #f4c648;
+  }
+
+  @media only screen and (max-width: 768px) {
+    h2 {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: right;
+    }
+  }
+}
+
+.textBlock {
+  p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    p {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: right;
+    }
+  }
+}

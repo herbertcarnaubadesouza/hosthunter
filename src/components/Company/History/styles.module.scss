@@ -1,0 +1,123 @@
+.container {
+  position: relative;
+  color: #fff;
+}
+
+.content {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 2.5rem;
+  padding-block: 12rem;
+  display: flex;
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    top: 20px;
+    overflow: hidden;
+    content: url(/images/vectorCompany.png);
+
+    @media only screen and (max-width: 768px) {
+      content: "";
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding-inline: 2rem;
+    padding-top: 95px;
+    padding-bottom: 0px;
+  }
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  gap: 59px;
+  width: 100%;
+
+  button {
+    width: 100%;
+    max-width: 386px;
+    background: linear-gradient(89.87deg, #f4c648 0.09%, #ffb347 99.89%);
+    border-radius: 15px;
+    padding-block: 34px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #131b2b;
+  }
+
+  @media only screen and (max-width: 768px) {
+    gap: 22px;
+    max-width: 163px;
+
+    button {
+      max-width: 108px;
+      font-size: 12px;
+      padding-block: 7px;
+      border-radius: 5px;
+    }
+  }
+}
+
+.titleBlock {
+  min-width: 539px;
+  h2 {
+    text-align: left;
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 54px;
+    color: var(--white);
+  }
+
+  span {
+    color: #f4c648;
+  }
+
+  @media only screen and (max-width: 768px) {
+    min-width: 163px;
+    h2 {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    p {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+}
+.rightSide {
+  display: flex;
+  gap: 10rem;
+
+  img {
+    min-width: 450px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  @media only screen and (max-width: 768px) {
+    img {
+      min-width: 360px;
+      margin-top: -50px;
+    }
+  }
+}

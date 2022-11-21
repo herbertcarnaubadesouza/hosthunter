@@ -1,0 +1,105 @@
+.container {
+  display: none;
+  padding-block: 50px;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    top: 550px;
+    bottom: 0;
+    z-index: -1;
+    content: url(/images/subtract-mobile.png);
+  }
+
+  @media only screen and (max-width: 768px) {
+    display: block;
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  margin-bottom: 23px;
+  padding-inline: 2rem;
+
+  h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--white);
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    color: #f4c648;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 12px;
+  }
+}
+
+.leftSide {
+  img {
+    max-width: 130px;
+    object-fit: cover;
+  }
+}
+
+.depoimentBlock {
+  display: flex;
+  align-items: center;
+  gap: 39px;
+}
+
+.swiper {
+  height: 100%;
+  width: 100%;
+}
+
+.rightSide {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.swiperSlide {
+  min-height: 185px;
+  width: 100%;
+  max-width: 210px;
+  padding-inline: 15px;
+  background: #293964;
+  border-radius: 5px;
+  padding-block: 10px;
+  color: #fff;
+}
+
+.slideContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 12px;
+}
+
+.userInfo {
+  display: flex;
+  gap: 11px;
+  img {
+    &:first-child {
+      width: 37px;
+    }
+  }
+}
+
+.estrelas {
+  max-width: 105px;
+  object-fit: contain;
+}
+
+.clientName {
+  margin-top: 24px;
+  text-align: right;
+  font-style: italic;
+}

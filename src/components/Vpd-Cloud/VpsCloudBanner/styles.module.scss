@@ -1,0 +1,125 @@
+.container {
+  padding-inline: 2.5rem;
+  margin-inline: auto;
+  margin-left: max(0px, (100% - 1440px)/2);
+  position: relative;
+  padding-top: 6.5rem;
+
+  @media only screen and (max-width: 768px) {
+    padding-inline: 2rem;
+    padding-top: 5.3rem;
+  }
+}
+
+.titleWrapper {
+  display: flex;
+  color: var(--white);
+  width: 100%;
+
+  @media only screen and (max-width: 768px) {
+    justify-content: flex-start;
+  }
+}
+
+.leftSide {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+
+  @media only screen and (max-width: 767px) {
+    gap: 1rem;
+    img {
+      max-width: 27px;
+    }
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  max-width: 623px;
+
+  h1 {
+    font-weight: 600;
+    font-size: 62px;
+    line-height: 82px;
+  }
+
+  h2 {
+    text-align: right;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 35px;
+    letter-spacing: 0.11em;
+    text-align: left;
+  }
+
+  @media only screen and (max-width: 768px) {
+    gap: 10px;
+    h1 {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+    }
+
+    h2 {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: left;
+      letter-spacing: 0.11em;
+      max-width: 223px;
+    }
+  }
+}
+
+.rightSide {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 2.5rem;
+
+  @media only screen and (max-width: 767px) {
+    margin-left: 1rem;
+    img {
+      max-width: 27px;
+      margin-left: -105px;
+    }
+  }
+}
+
+.tedBanner {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -40px;
+  margin-left: -150px;
+
+  img {
+    max-width: 470px;
+    object-fit: cover;
+    margin-right: max(0px, (100% - 1440px)/2);
+
+    @media only screen and (max-width: 768px) {
+      max-width: 205px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    top: 60px;
+    overflow: hidden;
+    content: url(/images/backgroundCloud.svg);
+
+    @media only screen and (max-width: 768px) {
+      content: "";
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    margin-top: -10px;
+    margin-right: -80px;
+  }
+}
