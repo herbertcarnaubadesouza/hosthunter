@@ -30,7 +30,7 @@ export function DesktopHeader() {
               </Link>
             </nav>
             <div className={styles.icon}>
-              <img src="/images/personMobile.svg" alt="" />
+              <img src="/images/person.svg" alt="" />
             </div>
           </div>
         </div>

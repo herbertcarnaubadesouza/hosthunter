@@ -1,5 +1,4 @@
 import Link from "next/link";
-import PersonIconMobile from "../../../../../Icons/PersonIconMobile";
 
 import styles from "./styles.module.scss";
 
@@ -46,7 +45,7 @@ export function NavigationDrawer({
 
           <div className={styles.wishSection}>
             <div className={styles.itemsContainer}>
-              <PersonIconMobile />
+              <img src="/images/personMobile.svg" alt="" />
               Perfil
             </div>
           </div>

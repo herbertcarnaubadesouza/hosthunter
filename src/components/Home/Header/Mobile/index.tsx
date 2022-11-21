@@ -1,6 +1,5 @@
 import { useState } from "react";
 import MenuHamburguer from "../../../../Icons/MenuHamburguer";
-import PersonIconMobile from "../../../../Icons/PersonIconMobile";
 import { NavigationDrawer } from "./NavigationDrawer";
 
 import styles from "./styles.module.scss";
@@ -21,7 +20,7 @@ export function MobileHeader() {
           <MenuHamburguer />
         </a>
         <img src="/images/logoHostHunter.png" alt="" />
-        <PersonIconMobile />
+        <img src="/images/personMobile.svg" alt="" />
       </header>
       <NavigationDrawer isOpen={isMenuOpen} handleClose={handleCloseMenu} />
     </>
