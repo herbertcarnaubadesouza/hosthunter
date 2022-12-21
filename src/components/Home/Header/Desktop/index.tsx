@@ -1,55 +1,57 @@
-import Link from 'next/link'
-import { useRouter } from 'next/router'
-import styles from './styles.module.scss'
+import Link from "next/link";
+import { useRouter } from "next/router";
+import styles from "./styles.module.scss";
 
 const services = [
   {
-    url: '/cloud-storage-drive',
-    icon: 'Cloud_Icon.png',
-    name: 'Cloud Storage Drive',
+    url: "/cloud-storage-drive",
+    icon: "Cloud_Icon.png",
+    name: "Cloud Storage Drive",
     description:
-      'is simply dummy text of the printing and typesetting industry.',
+      "is simply dummy text of the printing and typesetting industry.",
   },
   {
-    url: '/server',
-    icon: 'Cloud_Folder_Icon.png',
-    name: 'Servidores e Colocations',
+    url: "/server",
+    icon: "Cloud_Folder_Icon.png",
+    name: "Servidores e Colocations",
     description:
-      'is simply dummy text of the printing and typesetting industry.',
+      "is simply dummy text of the printing and typesetting industry.",
   },
   {
-    url: '/vps-cloud',
-    icon: 'Design_Icon.png',
-    name: 'VPS Cloud',
+    url: "/vps-cloud",
+    icon: "Design_Icon.png",
+    name: "VPS Cloud",
     description:
-      'is simply dummy text of the printing and typesetting industry.',
+      "is simply dummy text of the printing and typesetting industry.",
   },
   {
-    url: '/solucoes-corporativas',
-    icon: 'Building_Icon.png',
-    name: 'Solucões Corporativas',
+    url: "/solucoes-corporativas",
+    icon: "Building_Icon.png",
+    name: "Solucões Corporativas",
     description:
-      'is simply dummy text of the printing and typesetting industry.',
+      "is simply dummy text of the printing and typesetting industry.",
   },
   {
-    url: '/',
-    icon: 'Website_Icon.png',
-    name: 'Registrar Dominio',
+    url: "/",
+    icon: "Website_Icon.png",
+    name: "Registrar Dominio",
     description:
-      'is simply dummy text of the printing and typesetting industry.',
+      "is simply dummy text of the printing and typesetting industry.",
   },
-]
+];
 
 export function DesktopHeader() {
-  const router = useRouter()
+  const router = useRouter();
   return (
     <>
       <header className={styles.header}>
         <div className={styles.headerActions}>
           <div className="container">
-            <div className={styles.logo}>
-              <img src="/images/logoHostHunter.png" alt="" />
-            </div>
+            <Link href="/">
+              <div className={styles.logo}>
+                <img src="/images/logoHostHunter.png" alt="" />
+              </div>
+            </Link>
             <nav aria-label="Principal">
               <ul className={styles.navLinks}>
                 <li>
@@ -59,7 +61,7 @@ export function DesktopHeader() {
                     </a>
                   </Link> */}
                   <button
-                    className={router.pathname === '/' ? 'active' : ''}
+                    className={router.pathname === "/" ? "active" : ""}
                     type="button"
                     aria-haspopup="true"
                     aria-expanded="true"
@@ -90,10 +92,10 @@ export function DesktopHeader() {
                   </div>
                 </li>
                 <li>
-                  <Link href={'/produtos'}>
+                  <Link href={"/produtos"}>
                     <a
                       className={
-                        router.pathname === '/produtos' ? 'active' : ''
+                        router.pathname === "/produtos" ? "active" : ""
                       }
                     >
                       Gaming Solutions
@@ -101,9 +103,9 @@ export function DesktopHeader() {
                   </Link>
                 </li>
                 <li>
-                  <Link href={'/social'}>
+                  <Link href={"/social"}>
                     <a
-                      className={router.pathname === '/social' ? 'active' : ''}
+                      className={router.pathname === "/social" ? "active" : ""}
                     >
                       Empresa
                     </a>
@@ -118,5 +120,5 @@ export function DesktopHeader() {
         </div>
       </header>
     </>
-  )
+  );
 }

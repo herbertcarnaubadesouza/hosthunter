@@ -25,6 +25,10 @@
   }
 }
 
+.logo {
+  cursor: pointer;
+}
+
 .navLinks {
   display: flex;
   justify-content: space-between;
@@ -101,7 +105,7 @@
 
       &::before,
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         background-color: inherit;
       }
