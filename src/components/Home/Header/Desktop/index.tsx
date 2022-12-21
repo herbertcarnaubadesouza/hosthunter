@@ -61,7 +61,6 @@ export function DesktopHeader() {
                     </a>
                   </Link> */}
                   <button
-                    className={router.pathname === "/" ? "active" : ""}
                     type="button"
                     aria-haspopup="true"
                     aria-expanded="true"
