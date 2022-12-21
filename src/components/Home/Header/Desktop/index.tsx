@@ -92,10 +92,10 @@ export function DesktopHeader() {
                   </div>
                 </li>
                 <li>
-                  <Link href={"/produtos"}>
+                  <Link href={"/game-solutions"}>
                     <a
                       className={
-                        router.pathname === "/produtos" ? "active" : ""
+                        router.pathname === "/game-solutions" ? "active" : ""
                       }
                     >
                       Gaming Solutions
@@ -103,9 +103,9 @@ export function DesktopHeader() {
                   </Link>
                 </li>
                 <li>
-                  <Link href={"/social"}>
+                  <Link href={"/company"}>
                     <a
-                      className={router.pathname === "/social" ? "active" : ""}
+                      className={router.pathname === "/company" ? "active" : ""}
                     >
                       Empresa
                     </a>

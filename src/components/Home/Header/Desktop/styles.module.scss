@@ -48,6 +48,11 @@
       }
     }
 
+    :global(.active) {
+      color: rgb(244, 198, 72);
+      font-weight: 600;
+    }
+
     button {
       font-size: inherit;
       color: inherit;
