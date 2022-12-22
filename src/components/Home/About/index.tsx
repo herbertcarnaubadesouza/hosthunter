@@ -35,7 +35,7 @@ export function About() {
               <h2>Vestimos a camisa do seu negócio</h2>
               <p>
                 Somos um time de pessoas diferentes que vestem a camisa para
-                fazer o seu sucesso acontecer.
+                fazer o seu sucesso acontecer!
               </p>
             </div>
           </div>
