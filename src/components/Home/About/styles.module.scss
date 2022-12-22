@@ -57,6 +57,7 @@
 
   @media only screen and (max-width: 768px) {
     justify-content: flex-start;
+    margin-block: 4.5rem;
 
     &::before {
       position: absolute;
