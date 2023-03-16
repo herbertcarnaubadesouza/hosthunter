@@ -7,7 +7,7 @@ export function About() {
         <div className={styles.allContent}>
           <div className={styles.title}>
             <h2>Para você poder ficar por dentro</h2>
-            <p>Conheça mais sobre a nossa empresa 🡢 </p>
+            <p>Conheça mais sobre a nossa empresa</p>
           </div>
           <div className={styles.aboutContent}>
             <div className={`${styles.contentBox} first`}>
