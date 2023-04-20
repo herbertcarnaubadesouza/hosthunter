@@ -7,7 +7,7 @@ export function MobileCarroussel() {
   return (
     <section className={styles.mobileCarrousselContainer}>
       <div className={styles.titleContainer}>
-        <h2>De uma olhada em nossos pacotes</h2>
+        <h2>Confira nossos planos</h2>
         <p>Melhore seus negócios apartir de 39,90</p>
       </div>
 

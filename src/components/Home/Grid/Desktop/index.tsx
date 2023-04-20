@@ -5,7 +5,10 @@ export function DesktopGrid() {
     <>
       <section className={styles.container}>
         <div className={styles.title}>
-          <h2>Se ainda tem dúvidas de uma olhada você mesmo</h2>
+          <h2>
+            Descubra por que nossos clientes escolhem nossos serviços. Empresas
+            que confiam em nosso produto
+          </h2>
           <p>Empresas que confiam em nosso produto</p>
         </div>
         <div className={styles.gridContainer}>
@@ -21,11 +24,13 @@ export function DesktopGrid() {
                 </div>
                 <div className={styles.contentText}>
                   <p>
-                    is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum has been the industrys standard dummy
-                    text ever since the 1500s
+                    Desde que começamos a trabalhar com a HostHunter, nossos
+                    serviços de tecnologia têm tido um desempenho excelente. A
+                    escalabilidade, segurança e alta disponibilidade
+                    proporcionadas por eles nos permitiram crescer e atender
+                    nossos clientes com eficiência.
                   </p>
-                  <p className={styles.clientName}>Jeff Colinn</p>
+                  <p className={styles.clientName}>Marcelo Guimarães</p>
                 </div>
               </div>
               <div className={`thin ${styles.depoiment}`}>
@@ -35,10 +40,13 @@ export function DesktopGrid() {
                 </div>
                 <div className={styles.contentText}>
                   <p>
-                    is simply dummy text of the printing and typesetting
-                    industry.
+                    Os serviços de datacenter e soluções personalizadas
+                    fornecidos pela HostHunter nos garantiram segurança e
+                    eficiência no gerenciamento de nossos dados e informações
+                    confidenciais. Além disso, o suporte técnico é sempre
+                    prestativo e rápido para resolver qualquer problema.
                   </p>
-                  <p className={styles.clientName}>Jeff Colinn</p>
+                  <p className={styles.clientName}>Roberto Menezes</p>
                 </div>
               </div>
             </div>
@@ -50,11 +58,13 @@ export function DesktopGrid() {
                 </div>
                 <div className={styles.contentText}>
                   <p>
-                    is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum has been the industrys standard dummy
-                    text ever since the 1500s
+                    Com o auxílio da HostHunter, conseguimos implementar um
+                    sistema de gestão mais eficiente e seguro em nossos
+                    supermercados. A baixa latência e alta disponibilidade nos
+                    permitiram melhorar nossos serviços e atendimento aos
+                    clientes
                   </p>
-                  <p className={styles.clientName}>Jeff Colinn</p>
+                  <p className={styles.clientName}>Camila Alves</p>
                 </div>
               </div>
               <div className={`thin ${styles.depoiment}`}>
@@ -64,10 +74,14 @@ export function DesktopGrid() {
                 </div>
                 <div className={styles.contentText}>
                   <p>
-                    is simply dummy text of the printing and typesetting
-                    industry.
+                    A equipe da HostHunter revolucionou nosso servidor OTServer
+                    Tibia. Com a infraestrutura fornecida, agora temos um
+                    ambiente de jogo estável e seguro para nossos jogadores,
+                    além de baixa latência e alta disponibilidade. Nossos gamers
+                    estão extremamente satisfeitos com a experiência
+                    proporcionada.
                   </p>
-                  <p className={styles.clientName}>Jeff Colinn</p>
+                  <p className={styles.clientName}>Henrique Oliveira</p>
                 </div>
               </div>
             </div>
@@ -79,10 +93,11 @@ export function DesktopGrid() {
                 </div>
                 <div className={styles.contentText}>
                   <p>
-                    is simply dummy text of the printing and typesetting
-                    industry.
+                    Com sua experiência e excelência em serviços, a HostHunter é
+                    uma opção confiável para empresas que desejam ter uma
+                    infraestrutura de data center confiável e de alta qualidade.
                   </p>
-                  <p className={styles.clientName}>Jeff Colinn</p>
+                  <p className={styles.clientName}>Ana Shuttz</p>
                 </div>
               </div>
               <div className={`thin ${styles.depoiment}`}>
@@ -92,11 +107,14 @@ export function DesktopGrid() {
                 </div>
                 <div className={styles.contentText}>
                   <p>
-                    is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum has been the industrys standard dummy
-                    text ever since the 1500s
+                    A equipe da HostHunter revolucionou nosso servidor OTServer
+                    Tibia. Com a infraestrutura fornecida, agora temos um
+                    ambiente de jogo estável e seguro para nossos jogadores,
+                    além de baixa latência e alta disponibilidade. Nossos gamers
+                    estão extremamente satisfeitos com a experiência
+                    proporcionada.
                   </p>
-                  <p className={styles.clientName}>Jeff Colinn</p>
+                  <p className={styles.clientName}>Henrique Oliveira</p>
                 </div>
               </div>
             </div>

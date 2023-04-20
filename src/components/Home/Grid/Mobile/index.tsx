@@ -8,7 +8,7 @@ export function MobileGrid() {
     <>
       <section className={styles.container}>
         <div className={styles.title}>
-          <h2>Se ainda tem dúvidas de uma olhada</h2>
+          <h2>Descubra por que nossos clientes escolhem nossos serviços.</h2>
           <p>Empresas que confiam em nosso produto</p>
         </div>
 

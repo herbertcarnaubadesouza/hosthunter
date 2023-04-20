@@ -1,0 +1,113 @@
+.container {
+  color: #fff;
+  position: relative;
+  font-family: var(--ff-primary);
+}
+
+.content {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 2.5rem;
+
+  @media only screen and (max-width: 768px) {
+    padding-inline: 2rem;
+  }
+}
+
+.imgBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 280px;
+
+  img {
+    max-width: 690px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.34em;
+    color: #ffffff;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding-block: 69px;
+
+    img {
+      width: 216px;
+      object-fit: cover;
+    }
+  }
+}
+
+.blogPart {
+  padding-bottom: 200px;
+  h1 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+    color: rgb(244, 198, 72);
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+  .date {
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 16px;
+      line-height: 35px;
+    }
+  }
+
+  .blogImage {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    img {
+      @media only screen and (max-width: 768px) {
+        max-width: 350px;
+        object-fit: cover;
+        height: 200px;
+        border-radius: 3px;
+      }
+    }
+  }
+
+  .bodyPost {
+    max-width: 1240px;
+    margin-inline: auto;
+    font-family: "Verdana";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: justify;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding-inline: 1rem;
+    padding-bottom: 90px;
+  }
+}

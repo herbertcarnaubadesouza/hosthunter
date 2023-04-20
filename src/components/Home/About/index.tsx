@@ -6,23 +6,19 @@ export function About() {
       <section className="container">
         <div className={styles.allContent}>
           <div className={styles.title}>
-            <h2>Para você poder ficar por dentro</h2>
+            <h2>Cresça com a HostHunter</h2>
             <p>Conheça mais sobre a nossa empresa.</p>
           </div>
           <div className={styles.aboutContent}>
             <div className={`${styles.contentBox} first`}>
-              <h2>Aqui não tem asteriscos e letras miúdas</h2>
-              <p>
-                Somos movidos pela transparência e honestidade em todos os
-                relacionamentos que cultivamos. Aqui é você quem está no
-                controle!
-              </p>
+              <h2>Melhor proteção DDoS do mercado nacional</h2>
+              <p>com foco em seu negócio, seja corporativo ou gaming</p>
             </div>
           </div>
           <div className={styles.aboutContent}>
             <div className={styles.contentBox}>
               <h2>
-                Deixamos o velho e sem sentido<br></br> no passado
+                Servidores de alto desempenho<br></br> e customizado
               </h2>
               <p>
                 Nascemos da vontade de romper com um mercado tradicional e cheio
@@ -32,20 +28,16 @@ export function About() {
           </div>
           <div className={styles.aboutContent}>
             <div className={`${styles.contentBox} third`}>
-              <h2>Vestimos a camisa do seu negócio</h2>
+              <h2>Garantia de uptime</h2>
               <p>
-                Somos um time de pessoas diferentes que vestem a camisa para
-                fazer o seu sucesso acontecer.
+                Garantia de uptime de 99,98% para toda nossa infra-estrutura.
               </p>
             </div>
           </div>
           <div className={styles.aboutContent}>
             <div className={`${styles.contentBox} fourth`}>
-              <h2>Sabemos como é estar no seu lugar</h2>
-              <p>
-                Nossas soluções são feitas e pensadas por empreendedores.
-                Entendemos você e as necessidades do seu negócio!
-              </p>
+              <h2>Suporte disponível 24/7</h2>
+              <p>Prontos para atender a tua solicitação ou dificuldade.</p>
             </div>
           </div>
         </div>

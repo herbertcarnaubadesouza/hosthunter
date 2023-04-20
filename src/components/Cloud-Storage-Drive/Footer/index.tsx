@@ -10,8 +10,8 @@ export function CloudFooter() {
             <div className={styles.footerDescription}>
               <div className={styles.leftSideFooter}>
                 <h3>
-                  <span style={{ color: "#f4c648" }}>Obrigado</span> por visitar
-                  o nosso site, sinta-se livre para entrar em contato conosco!
+                  <span style={{ color: "#f4c648" }}>HOST HUNTER SERVICOS</span>{" "}
+                  DE TECNOLOGIA DO BRASIL LTDA © 2023 CNPJ: 46.539.579/0001-66
                 </h3>
               </div>
               <div className={styles.rightSide}>

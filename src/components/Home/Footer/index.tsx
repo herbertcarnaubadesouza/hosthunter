@@ -1,10 +1,33 @@
+import { createClient } from "contentful";
+import Link from "next/link";
 import { Envelope, InstagramLogo, Phone } from "phosphor-react";
+import { useEffect, useState } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "./styles.module.scss";
 
+const contentfulClient = createClient({
+  accessToken: "Noy9vNGCEQh64v6T6IB6Gw3dPZ_wNJt8QYVbAl6x3nM",
+  space: "dqlsklgy3bcu",
+});
+
 export function Footer() {
+  const [posts, setPosts] = useState<any[]>([]);
+
+  useEffect(() => {
+    async function fetchPosts() {
+      const response = await contentfulClient.getEntries({
+        content_type: "blog",
+      });
+
+      console.log(response.items);
+
+      setPosts(response.items);
+    }
+    fetchPosts();
+  }, []);
+
   return (
     <>
       <section className={styles.container}>
@@ -16,72 +39,38 @@ export function Footer() {
           <div className={styles.swiperWrapper}>
             <Swiper
               slidesPerView="auto"
-              spaceBetween={10}
+              spaceBetween={30}
               grabCursor={true}
               className="mySwiper"
             >
-              <SwiperSlide className={styles.swiperSlide}>
-                <div className={styles.swiperContent}>
-                  <div className={styles.blogImage}>
-                    <img src="/images/blog1.png" alt="" />
-                  </div>
-                  <div className={styles.blogFooter}>
-                    <h3>TITULO DO ARTIGO</h3>
-                    <p>Descrição rápida</p>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className={styles.swiperSlide}>
-                <div className={styles.swiperContent}>
-                  <div className={styles.blogImage}>
-                    <img src="/images/blog1.png" alt="" />
-                  </div>
-                  <div className={styles.blogFooter}>
-                    <h3>TITULO DO ARTIGO</h3>
-                    <p>Descrição rápida</p>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className={styles.swiperSlide}>
-                <div className={styles.swiperContent}>
-                  <div className={styles.blogImage}>
-                    <img src="/images/blog2.png" alt="" />
-                  </div>
-                  <div className={styles.blogFooter}>
-                    <h3>TITULO DO ARTIGO</h3>
-                    <p>Descrição rápida</p>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className={styles.swiperSlide}>
-                <div className={styles.swiperContent}>
-                  <div className={styles.blogImage}>
-                    <img src="/images/blog3.png" alt="" />
-                  </div>
-                  <div className={styles.blogFooter}>
-                    <h3>TITULO DO ARTIGO</h3>
-                    <p>Descrição rápida</p>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className={styles.swiperSlide}>
-                <div className={styles.swiperContent}>
-                  <div className={styles.blogImage}>
-                    <img src="/images/blog4.png" alt="" />
-                  </div>
-                  <div className={styles.blogFooter}>
-                    <h3>TITULO DO ARTIGO</h3>
-                    <p>Descrição rápida</p>
-                  </div>
-                </div>
-              </SwiperSlide>
+              {posts.map((post, index) => (
+                <SwiperSlide key={post.sys.id} className={styles.swiperSlide}>
+                  <Link href={`/blog/${post.sys.id}`}>
+                    <a className={styles.swiperContent}>
+                      <div className={styles.blogImage}>
+                        <img src={post.fields.thumb.fields.file.url} alt="" />
+                      </div>
+                      <div className={styles.blogFooter}>
+                        <h3>{post.fields.title}</h3>
+                        <p>
+                          {post.fields.body.content[0].content[0].value.slice(
+                            0,
+                            100
+                          )}
+                          ...
+                        </p>
+                      </div>
+                    </a>
+                  </Link>
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
           <div className={styles.footerDescription}>
             <div className={styles.leftSideFooter}>
               <h3>
-                <span style={{ color: "#f4c648" }}>Obrigado</span> por visitar o
-                nosso site, sinta-se livre para entrar em contato conosco!
+                <span style={{ color: "#f4c648" }}>HOST HUNTER SERVICOS</span>{" "}
+                DE TECNOLOGIA DO BRASIL LTDA © 2023 CNPJ: 46.539.579/0001-66
               </h3>
             </div>
             <div className={styles.rightSide}>

@@ -7,8 +7,8 @@ export function DesktopCarroussel() {
   return (
     <section className={styles.container}>
       <div className={styles.titleContent}>
-        <h2>De uma olhada em nossos pacotes:</h2>
-        <p>Melhore seus negócios a partir de 39,90</p>
+        <h2>Confira nossos planos:</h2>
+        <p>Acelere sua empresa à partir de 39,90</p>
       </div>
       <div className={styles.descriptionContent}>
         <div className={styles.swiperWrapper}>
