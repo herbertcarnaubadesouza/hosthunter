@@ -6,6 +6,7 @@ import { Grid } from "../components/Home/Grid";
 import { Header } from "../components/Home/Header";
 import { Services } from "../components/Home/Services";
 import { Ted } from "../components/Home/Ted";
+import PrivacyPolicy from "../components/PrivacyPolicy";
 
 const Home: NextPage = () => (
   <>
@@ -16,6 +17,7 @@ const Home: NextPage = () => (
     <About />
     <Ted />
     <Footer />
+    <PrivacyPolicy />
   </>
 );
 

@@ -58,11 +58,12 @@ export function DesktopGrid() {
                 </div>
                 <div className={styles.contentText}>
                   <p>
-                    Com o auxílio da HostHunter, conseguimos implementar um
-                    sistema de gestão mais eficiente e seguro em nossos
-                    supermercados. A baixa latência e alta disponibilidade nos
-                    permitiram melhorar nossos serviços e atendimento aos
-                    clientes
+                    Desde que iniciamos a parceria com a HostHunter, nossa
+                    infraestrutura de TI tem alcançado um desempenho
+                    excepcional. A flexibilidade, proteção e prontidão
+                    fornecidas por eles nos possibilitaram expandir nossos
+                    negócios e oferecer serviços de qualidade aos nossos
+                    clientes de forma eficaz.
                   </p>
                   <p className={styles.clientName}>Camila Alves</p>
                 </div>

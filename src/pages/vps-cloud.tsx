@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import { Header } from "../components/Home/Header";
+import PrivacyPolicy from "../components/PrivacyPolicy";
 import { Carroussel } from "../components/Servidores/Carroussel";
 import { ServerFooter } from "../components/Servidores/Footer";
 import { VPSGrid } from "../components/Vpd-Cloud/Grid";
@@ -15,6 +16,7 @@ const VpsCloud: NextPage = () => {
       <VPSGrid />
       <VpsCarroussel />
       <ServerFooter />
+      <PrivacyPolicy />
     </>
   );
 };

@@ -4,6 +4,7 @@ import { GameSolutionsBanner } from "../components/GameSolutions/Banner";
 import { GameSolutionsForm } from "../components/GameSolutions/CloudForm";
 import { GameSolutionsGrid } from "../components/GameSolutions/GameSolutionsGrid";
 import { Header } from "../components/Home/Header";
+import PrivacyPolicy from "../components/PrivacyPolicy";
 
 const GameSolutions: NextPage = () => {
   return (
@@ -13,6 +14,7 @@ const GameSolutions: NextPage = () => {
       <GameSolutionsGrid />
       <GameSolutionsForm />
       <CloudFooter />
+      <PrivacyPolicy />
     </>
   );
 };

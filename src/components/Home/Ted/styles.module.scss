@@ -3,6 +3,14 @@
 }
 
 .content {
+  img {
+    animation: subir-e-descer-desktop 5s ease-in-out infinite;
+
+    @media only screen and (max-width: 768px) {
+      animation: subir-e-descer-mobile 5s ease-in-out infinite;
+    }
+  }
+
   &::after {
     position: absolute;
     left: 0;
@@ -25,5 +33,29 @@
       top: 160px;
       content: url(/images/Vector-mobile.svg);
     }
+  }
+}
+
+@keyframes subir-e-descer-desktop {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes subir-e-descer-mobile {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

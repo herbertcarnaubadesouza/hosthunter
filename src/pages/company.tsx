@@ -4,6 +4,7 @@ import { CompanyFooter } from "../components/Company/CompanyFooter";
 import { CompanyHistory } from "../components/Company/History";
 import { TedHunter } from "../components/Company/TedHunter";
 import { Header } from "../components/Home/Header";
+import PrivacyPolicy from "../components/PrivacyPolicy";
 
 const Company: NextPage = () => {
   return (
@@ -13,6 +14,7 @@ const Company: NextPage = () => {
       <CompanyHistory />
       <TedHunter />
       <CompanyFooter />
+      <PrivacyPolicy />
     </>
   );
 };

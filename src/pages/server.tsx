@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import { TedServer } from "../components/Cloud-Storage-Drive/TedServer";
 import { Header } from "../components/Home/Header";
+import PrivacyPolicy from "../components/PrivacyPolicy";
 import { Carroussel } from "../components/Servidores/Carroussel";
 import { ServerFooter } from "../components/Servidores/Footer";
 import { ServerGrid } from "../components/Servidores/Grid";
@@ -15,6 +16,7 @@ const Server: NextPage = () => {
       <ServerGrid />
       <TedServer />
       <ServerFooter />
+      <PrivacyPolicy />
     </>
   );
 };
