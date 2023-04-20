@@ -51,7 +51,9 @@ export function Services() {
                 </div>
                 <div className={styles.swiperFooter}>
                   <span>R$ 29.99</span>
-                  <button>Comprar</button>
+                  <a rel="noreferrer" href="https://wa.link/lqv0a6">
+                    <button>Comprar</button>
+                  </a>
                 </div>
               </div>
             </SwiperSlide>
@@ -67,7 +69,9 @@ export function Services() {
                 </div>
                 <div className={styles.swiperFooter}>
                   <span>R$ 29.99</span>
-                  <button>Comprar</button>
+                  <a rel="noreferrer" href="https://wa.link/lqv0a6">
+                    <button>Comprar</button>
+                  </a>
                 </div>
               </div>
             </SwiperSlide>
@@ -83,7 +87,9 @@ export function Services() {
                 </div>
                 <div className={styles.swiperFooter}>
                   <span>R$ 29.99</span>
-                  <button>Comprar</button>
+                  <a rel="noreferrer" href="https://wa.link/lqv0a6">
+                    <button>Comprar</button>
+                  </a>
                 </div>
               </div>
             </SwiperSlide>
@@ -99,7 +105,9 @@ export function Services() {
                 </div>
                 <div className={styles.swiperFooter}>
                   <span>R$ 29.99</span>
-                  <button>Comprar</button>
+                  <a rel="noreferrer" href="https://wa.link/lqv0a6">
+                    <button>Comprar</button>
+                  </a>
                 </div>
               </div>
             </SwiperSlide>
@@ -115,7 +123,9 @@ export function Services() {
                 </div>
                 <div className={styles.swiperFooter}>
                   <span>R$ 29.99</span>
-                  <button>Comprar</button>
+                  <a rel="noreferrer" href="https://wa.link/lqv0a6">
+                    <button>Comprar</button>
+                  </a>
                 </div>
               </div>
             </SwiperSlide>

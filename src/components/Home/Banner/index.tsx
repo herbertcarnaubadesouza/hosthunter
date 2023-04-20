@@ -13,7 +13,9 @@ export function Banner() {
             desempenho
           </h1>
           <h2>Personalizadas para seu negócio!</h2>
-          <button>Peça seu teste gratuito!</button>
+          <a rel="noreferrer" href="https://wa.link/lqv0a6">
+            <button>Peça seu teste gratuito!</button>
+          </a>
         </div>
       </section>
     </>

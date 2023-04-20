@@ -7,11 +7,7 @@ export default function WhatsApp() {
     <>
       <section className={styles.sectionWhats}>
         <div className={styles.whatsApp}>
-          <a
-            rel="noreferrer"
-            id="whatsapp-lottie-button"
-            href="https://wa.link/lqv0a6"
-          >
+          <a rel="noreferrer" href="https://wa.link/lqv0a6">
             <WhatsAnimation />
           </a>
         </div>
