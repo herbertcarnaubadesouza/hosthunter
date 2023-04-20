@@ -77,7 +77,7 @@
 .rightSide {
   display: flex;
   align-items: flex-start;
-  margin-left: 2.5rem;
+  margin-left: -17rem;
 
   @media only screen and (max-width: 767px) {
     margin-left: 1rem;
@@ -99,6 +99,11 @@
     object-fit: cover;
     margin-right: max(0px, (100% - 1440px)/2);
 
+    animation-name: moveLeftRight;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
     @media only screen and (max-width: 768px) {
       max-width: 205px;
     }
@@ -110,7 +115,7 @@
     bottom: 0;
     z-index: -1;
     top: 60px;
-    overflow: hidden;
+    opacity: 0.4;
     content: url(/images/backgroundCloud.svg);
 
     @media only screen and (max-width: 768px) {
@@ -121,5 +126,17 @@
   @media only screen and (max-width: 768px) {
     margin-top: -10px;
     margin-right: -80px;
+  }
+}
+
+@keyframes moveLeftRight {
+  0% {
+    transform: translateX(0); /* Starting position */
+  }
+  50% {
+    transform: translateX(-50px); /* Move 50 pixels to the left */
+  }
+  100% {
+    transform: translateX(0); /* Return to starting position */
   }
 }

@@ -29,7 +29,9 @@ export function GameSolutionsGrid() {
             <p style={{ fontSize: "24px" }}>800/mês</p>
           </div>
           <div className={styles.buttonGrid}>
-            <button>Solicite um orçamento</button>
+            <a rel="noreferrer" href="https://wa.link/lqv0a6">
+              <button>Solicite um orçamento</button>
+            </a>
           </div>
           <div className={styles.processadorBlock}>
             <p>Intel Xeno E3 Family</p>
@@ -43,7 +45,9 @@ export function GameSolutionsGrid() {
             <p style={{ fontSize: "24px" }}>800/mês</p>
           </div>
           <div className={styles.buttonGrid}>
-            <button>Solicite um orçamento</button>
+            <a rel="noreferrer" href="https://wa.link/lqv0a6">
+              <button>Solicite um orçamento</button>
+            </a>
           </div>
           <div className={styles.processadorBlock}>
             <p>Intel Xeno E3 Family</p>
@@ -57,7 +61,9 @@ export function GameSolutionsGrid() {
             <p style={{ fontSize: "24px" }}>800/mês</p>
           </div>
           <div className={styles.buttonGrid}>
-            <button>Solicite um orçamento</button>
+            <a rel="noreferrer" href="https://wa.link/lqv0a6">
+              <button>Solicite um orçamento</button>
+            </a>
           </div>
           <div className={styles.processadorBlock}>
             <p>Intel Xeno E3 Family</p>
@@ -71,7 +77,9 @@ export function GameSolutionsGrid() {
             <p style={{ fontSize: "24px" }}>800/mês</p>
           </div>
           <div className={styles.buttonGrid}>
-            <button>Solicite um orçamento</button>
+            <a rel="noreferrer" href="https://wa.link/lqv0a6">
+              <button>Solicite um orçamento</button>
+            </a>
           </div>
         </div>
       </div>

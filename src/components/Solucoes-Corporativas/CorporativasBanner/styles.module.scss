@@ -97,6 +97,8 @@
     max-width: 470px;
     object-fit: cover;
     margin-right: max(0px, (100% - 1440px)/2);
+    animation: movimentoSemiCircular 5s ease-in-out infinite;
+    transform-origin: center;
 
     @media only screen and (max-width: 768px) {
       max-width: 205px;
@@ -109,7 +111,7 @@
     bottom: 0;
     z-index: -1;
     top: 60px;
-    overflow: hidden;
+    opacity: 0.5;
     content: url(/images/backgroundCloud.svg);
 
     @media only screen and (max-width: 768px) {
@@ -120,5 +122,15 @@
   @media only screen and (max-width: 768px) {
     margin-top: -10px;
     margin-right: -45px;
+  }
+}
+
+@keyframes movimentoSemiCircular {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-5deg);
   }
 }

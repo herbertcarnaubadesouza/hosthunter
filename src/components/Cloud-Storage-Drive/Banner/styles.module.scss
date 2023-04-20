@@ -96,6 +96,10 @@
     max-width: 950px;
     object-fit: cover;
     margin-right: max(0px, (100% - 1440px)/2);
+    animation-name: moveLeftRight;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
   }
 
   &::after {
@@ -119,5 +123,17 @@
       object-fit: cover;
       width: 487px;
     }
+  }
+}
+
+@keyframes moveLeftRight {
+  0% {
+    transform: translateX(0); /* Starting position */
+  }
+  50% {
+    transform: translateX(-50px); /* Move 50 pixels to the left */
+  }
+  100% {
+    transform: translateX(0); /* Return to starting position */
   }
 }

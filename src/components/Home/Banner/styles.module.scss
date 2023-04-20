@@ -18,6 +18,10 @@
   img {
     max-width: 660px;
     object-fit: cover;
+    animation-name: moveLeftRight;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 
     @media only screen and (max-width: 768px) {
       max-width: 263px;
@@ -52,7 +56,7 @@
 
     @media only screen and (max-width: 768px) {
       font-weight: 600;
-      font-size: 25px;
+      font-size: 22px;
       line-height: 29px;
       text-align: right;
     }
@@ -99,11 +103,24 @@
       letter-spacing: 0.09em;
       color: #131f36;
       border-radius: 5px;
-      max-width: 169px;
+      min-width: 189px;
     }
   }
 
   @media only screen and (max-width: 768px) {
     gap: 14px;
+  }
+}
+
+@keyframes moveLeftRight {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-15px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }

@@ -31,13 +31,6 @@ const services = [
     description:
       "is simply dummy text of the printing and typesetting industry.",
   },
-  {
-    url: "/",
-    icon: "Website_Icon.png",
-    name: "Registrar Dominio",
-    description:
-      "is simply dummy text of the printing and typesetting industry.",
-  },
 ];
 
 export function DesktopHeader() {

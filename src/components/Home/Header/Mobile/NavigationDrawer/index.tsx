@@ -71,17 +71,6 @@ export function NavigationDrawer({
                 Soluções Corporativas
               </a>
             </Link>
-            <Link href="/game-solutions">
-              <a
-                className={
-                  router.pathname === "/game-solutions"
-                    ? `${styles.navigation} active`
-                    : styles.navigation
-                }
-              >
-                Registrar Domínio
-              </a>
-            </Link>
             <Link href="/company">
               <a
                 className={

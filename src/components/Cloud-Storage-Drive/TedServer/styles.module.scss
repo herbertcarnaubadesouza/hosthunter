@@ -37,6 +37,7 @@
 
   img {
     max-width: 450px;
+    animation: subir-e-descer-desktop 5s ease-in-out infinite;
   }
 
   @media only screen and (max-width: 768px) {
@@ -49,6 +50,7 @@
     h2 {
       font-size: 20px;
       line-height: 23px;
+      margin-bottom: 40px;
     }
 
     &::after {
@@ -56,8 +58,20 @@
       left: 0;
       bottom: 0px;
       overflow-y: hidden;
-      top: 100px;
+      top: 110px;
       content: url(/images/Vector-mobile.svg);
     }
+  }
+}
+
+@keyframes subir-e-descer-desktop {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

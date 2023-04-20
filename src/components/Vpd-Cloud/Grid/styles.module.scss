@@ -135,13 +135,17 @@
     text-align: left;
     letter-spacing: 0.1em;
     color: #ffffff;
+    width: 100%;
+  }
+
+  a {
+    width: 100%;
   }
 
   button {
     background: linear-gradient(89.87deg, #f4c648 0.09%, #ffb347 99.89%);
     border-radius: 15px;
     width: 100%;
-    max-width: 422px;
     font-weight: 600;
     font-size: 36px;
     line-height: 54px;

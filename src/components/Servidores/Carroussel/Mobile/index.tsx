@@ -27,7 +27,7 @@ export function MobileCarroussel() {
               </div>
               <div className={styles.swiperFooter}>
                 <span>R$ 29.99</span>
-                <button>Buy Now</button>
+                <button>Comprar</button>
               </div>
             </div>
           </SwiperSlide>
@@ -40,7 +40,7 @@ export function MobileCarroussel() {
               </div>
               <div className={styles.swiperFooter}>
                 <span>R$ 29.99</span>
-                <button>Buy Now</button>
+                <button>Comprar</button>
               </div>
             </div>
           </SwiperSlide>
@@ -53,7 +53,7 @@ export function MobileCarroussel() {
               </div>
               <div className={styles.swiperFooter}>
                 <span>R$ 29.99</span>
-                <button>Buy Now</button>
+                <button>Comprar</button>
               </div>
             </div>
           </SwiperSlide>
