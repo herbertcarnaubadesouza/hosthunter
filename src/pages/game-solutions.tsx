@@ -5,6 +5,7 @@ import { GameSolutionsForm } from "../components/GameSolutions/CloudForm";
 import { GameSolutionsGrid } from "../components/GameSolutions/GameSolutionsGrid";
 import { Header } from "../components/Home/Header";
 import PrivacyPolicy from "../components/PrivacyPolicy";
+import WhatsApp from "../components/WhatsApp";
 
 const GameSolutions: NextPage = () => {
   return (
@@ -15,6 +16,7 @@ const GameSolutions: NextPage = () => {
       <GameSolutionsForm />
       <CloudFooter />
       <PrivacyPolicy />
+      <WhatsApp />
     </>
   );
 };

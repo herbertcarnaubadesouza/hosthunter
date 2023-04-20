@@ -7,6 +7,7 @@ import { Header } from "../components/Home/Header";
 import { Services } from "../components/Home/Services";
 import { Ted } from "../components/Home/Ted";
 import PrivacyPolicy from "../components/PrivacyPolicy";
+import WhatsApp from "../components/WhatsApp";
 
 const Home: NextPage = () => (
   <>
@@ -18,6 +19,7 @@ const Home: NextPage = () => (
     <Ted />
     <Footer />
     <PrivacyPolicy />
+    <WhatsApp />
   </>
 );
 

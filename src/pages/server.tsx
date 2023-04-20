@@ -6,6 +6,7 @@ import { Carroussel } from "../components/Servidores/Carroussel";
 import { ServerFooter } from "../components/Servidores/Footer";
 import { ServerGrid } from "../components/Servidores/Grid";
 import { ServerBanner } from "../components/Servidores/ServerBanner";
+import WhatsApp from "../components/WhatsApp";
 
 const Server: NextPage = () => {
   return (
@@ -17,6 +18,7 @@ const Server: NextPage = () => {
       <TedServer />
       <ServerFooter />
       <PrivacyPolicy />
+      <WhatsApp />
     </>
   );
 };

@@ -4,6 +4,7 @@ import { CloudFooter } from "../components/Cloud-Storage-Drive/Footer";
 import { CloudForm } from "../components/Cloud-Storage-Drive/Form";
 import { Header } from "../components/Home/Header";
 import PrivacyPolicy from "../components/PrivacyPolicy";
+import WhatsApp from "../components/WhatsApp";
 
 const CloudStorage: NextPage = () => {
   return (
@@ -13,6 +14,7 @@ const CloudStorage: NextPage = () => {
       <CloudForm />
       <CloudFooter />
       <PrivacyPolicy />
+      <WhatsApp />
     </>
   );
 };

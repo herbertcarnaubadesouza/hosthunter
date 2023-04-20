@@ -5,6 +5,7 @@ import { ServerFooter } from "../components/Servidores/Footer";
 import { Accordion } from "../components/Solucoes-Corporativas/Accordion";
 import { CorporativasBanner } from "../components/Solucoes-Corporativas/CorporativasBanner";
 import { CorporativasForm } from "../components/Solucoes-Corporativas/Form";
+import WhatsApp from "../components/WhatsApp";
 
 const SolucoesCorporativas: NextPage = () => {
   return (
@@ -15,6 +16,7 @@ const SolucoesCorporativas: NextPage = () => {
       <CorporativasForm />
       <ServerFooter />
       <PrivacyPolicy />
+      <WhatsApp />
     </>
   );
 };

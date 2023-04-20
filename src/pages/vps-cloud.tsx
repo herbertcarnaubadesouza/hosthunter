@@ -6,6 +6,7 @@ import { ServerFooter } from "../components/Servidores/Footer";
 import { VPSGrid } from "../components/Vpd-Cloud/Grid";
 import { VpsCarroussel } from "../components/Vpd-Cloud/VPSCarroussel";
 import { VpsCloudBanner } from "../components/Vpd-Cloud/VpsCloudBanner";
+import WhatsApp from "../components/WhatsApp";
 
 const VpsCloud: NextPage = () => {
   return (
@@ -17,6 +18,7 @@ const VpsCloud: NextPage = () => {
       <VpsCarroussel />
       <ServerFooter />
       <PrivacyPolicy />
+      <WhatsApp />
     </>
   );
 };

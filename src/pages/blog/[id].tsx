@@ -3,6 +3,7 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import { useRouter } from "next/router";
 import { Footer } from "../../components/Home/Footer";
 import { Header } from "../../components/Home/Header";
+import PrivacyPolicy from "../../components/PrivacyPolicy";
 import styles from "./styles.module.scss";
 
 const contentfulClient = createClient({
@@ -74,6 +75,7 @@ export default function BlogPost({ post }: BlogPostProps) {
         ))}
       </div>
       <Footer />
+      <PrivacyPolicy />
     </section>
   );
 }
