@@ -240,3 +240,18 @@
   text-align: justify;
   color: #ffffff;
 }
+
+.ilustracao {
+  animation: movimentoSemiCircular 5s ease-in-out infinite;
+  transform-origin: left center;
+}
+
+@keyframes movimentoSemiCircular {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}

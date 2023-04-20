@@ -43,6 +43,8 @@
 }
 
 .leftSide {
+  animation: movimentoSemiCircular 8s ease-in-out infinite;
+  transform-origin: left center;
   img {
     max-width: 130px;
     object-fit: cover;
@@ -102,4 +104,14 @@
   margin-top: 24px;
   text-align: right;
   font-style: italic;
+}
+
+@keyframes movimentoSemiCircular {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(13deg);
+  }
 }
